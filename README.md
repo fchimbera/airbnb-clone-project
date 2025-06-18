@@ -23,3 +23,19 @@ This is the backend system for the **Airbnb Clone Project**, engineered to repli
 - **Redis**: Used for caching and session management.
 - **Docker**: Containerization tool for consistent development and deployment environments.
 - **CI/CD Pipelines**: Automated pipelines for testing and deploying code changes.
+
+## Team Roles
+
+Building a scalable Airbnb Clone involves collaboration across several specialized roles. Each contributes to delivering a secure, efficient, and user-friendly backend.
+
+### Backend Developer
+Responsible for creating and maintaining the RESTful and GraphQL APIs. This includes implementing authentication logic, business rules, and integrating key features such as booking workflows, payment processing, and review management.
+
+### Database Administrator (DBA)
+Designs and manages the PostgreSQL database schema. Ensures optimized queries, indexes, and relationships between entities (Users, Properties, Bookings, etc.), while also maintaining data integrity, backups, and security.
+
+### DevOps Engineer
+Handles infrastructure automation, deployment, and monitoring. Manages Docker containers, configures CI/CD pipelines with tools like GitHub Actions, and ensures the backend remains scalable and reliable under load.
+
+### QA Engineer
+Tests all backend endpoints and features. Writes unit, integration, and end-to-end tests to identify bugs, validate functionality, and enforce performance standards. Also verifies API documentation aligns with implemented behavior.

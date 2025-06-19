@@ -75,6 +75,7 @@ GraphQL is a query language and runtime for APIs. GraphQL helps by:
 - **Real-time Updates**: Supports subscriptions for live data (e.g., booking status changes).
 
 ### Celery
+Celery is an asynchronous task queue for Python. Celery helps by:
 - **Background Processing**: Handles tasks like sending emails or notifications outside the main request cycle.
 - **Scalability**: Processes many tasks concurrently, improving performance.
 - **Scheduling**: Automates periodic jobs (e.g., cleaning up expired bookings).

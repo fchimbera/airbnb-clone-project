@@ -205,3 +205,8 @@ All API traffic will be encrypted using HTTPS to prevent eavesdropping and man-i
 
 **Why it matters:** Ensures that sensitive data, such as login credentials and payment details, are transmitted securely.
 
+## CI/CD Pipeline
+
+CI/CD (Continuous Integration and Continuous Deployment) pipelines are automated workflows that build, test, and deploy code changes whenever updates are made to the project repository. These pipelines help catch bugs early, ensure code quality, and enable rapid, reliable delivery of new features and fixes.
+
+For this project, tools such as **GitHub Actions** can be used to automate testing and deployment processes. **Docker** ensures consistent environments across development, testing, and production. By integrating CI/CD pipelines, the team can maintain high code quality, reduce manual errors, and accelerate the release cycle.

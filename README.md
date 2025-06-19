@@ -170,3 +170,38 @@ Allows users to leave ratings and feedback on properties they have stayed at. Th
 
 ### Performance Optimization
 Implements strategies such as indexed queries and caching to improve the speed and responsiveness of the platform. This ensures a seamless user experience, even as the number of users and listings grows.
+
+## API Security
+
+Ensuring the security of the API is critical for protecting user data, financial transactions, and the overall integrity of the platform. The following key security measures will be implemented:
+
+### Authentication
+All users must authenticate using secure methods such as token-based authentication (e.g., JWT or OAuth2). This ensures that only verified users can access protected endpoints and perform sensitive actions.
+
+**Why it matters:** Protects user accounts and personal information from unauthorized access.
+
+### Authorization
+Role-based access control (RBAC) will be enforced to ensure users can only perform actions permitted by their role (e.g., guest, host, admin). Permissions will be checked for every request to sensitive resources.
+
+**Why it matters:** Prevents users from accessing or modifying data they do not own or manage, maintaining data integrity and privacy.
+
+### Rate Limiting
+API endpoints will implement rate limiting to restrict the number of requests a user or IP can make in a given timeframe. This helps prevent abuse, brute-force attacks, and denial-of-service (DoS) attempts.
+
+**Why it matters:** Protects the platform from malicious activity and ensures fair usage for all users.
+
+### Data Validation & Sanitization
+All incoming data will be validated and sanitized to prevent injection attacks, such as SQL injection or cross-site scripting (XSS).
+
+**Why it matters:** Maintains the integrity of the database and prevents exploitation of vulnerabilities.
+
+### Secure Payment Processing
+Payment endpoints will use encrypted connections (HTTPS) and integrate with trusted third-party payment gateways. Sensitive payment data will never be stored directly on the platform.
+
+**Why it matters:** Safeguards users’ financial information and ensures compliance with industry standards.
+
+### HTTPS Enforcement
+All API traffic will be encrypted using HTTPS to prevent eavesdropping and man-in-the-middle attacks.
+
+**Why it matters:** Ensures that sensitive data, such as login credentials and payment details, are transmitted securely.
+

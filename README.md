@@ -150,3 +150,23 @@ The core entities for the Airbnb Clone backend are designed to capture the essen
 - A **Booking** is made by a **User** for a specific **Property**.
 - A **Review** is written by a **User** for a specific **Property**.
 - A **Payment** is linked to a **Booking** and made by a **User**.
+
+## Feature Breakdown
+
+### User Management
+Handles user registration, authentication, and profile management. This feature ensures secure access to the platform and allows users to update their personal information and manage their account settings.
+
+### Property Management
+Enables hosts to create, update, and delete property listings. It allows detailed descriptions, images, and amenities to be added, making it easy for guests to find and book suitable accommodations.
+
+### Booking System
+Manages the reservation process, including availability checks, booking creation, and check-in/check-out tracking. This feature ensures a smooth and reliable experience for both guests and hosts during the booking lifecycle.
+
+### Payment Processing
+Facilitates secure handling of transactions between guests and hosts. It manages payment records, processes refunds, and ensures that all financial operations are tracked and compliant with industry standards.
+
+### Review System
+Allows users to leave ratings and feedback on properties they have stayed at. This feature helps maintain quality and trust within the platform by providing transparency and accountability for both guests and hosts.
+
+### Performance Optimization
+Implements strategies such as indexed queries and caching to improve the speed and responsiveness of the platform. This ensures a seamless user experience, even as the number of users and listings grows.

@@ -104,3 +104,49 @@ CI/CD Pipelines are automated workflows for software delivery. CI/CD pipelines h
 - **Continuous Deployment**: Automatically deploys updates to staging or production.
 - **Quality Assurance**: Enforces code standards and checks before deployment.
 - **Faster Delivery**: Speeds up the release of new features and fixes.
+
+## Database Design
+
+The core entities for the Airbnb Clone backend are designed to capture the essential data and relationships needed for a booking platform. Below are the key entities, their important fields, and their relationships:
+
+### Users
+- **id:** Unique identifier for each user.
+- **name:** Full name of the user.
+- **email:** User’s email address (unique).
+- **password:** Hashed password for authentication.
+- **role:** Indicates if the user is a guest, host, or admin.
+
+### Properties
+- **id:** Unique identifier for each property.
+- **title:** Name or title of the property listing.
+- **description:** Detailed information about the property.
+- **address:** Physical location of the property.
+- **owner:** Reference to the user who owns (hosts) the property.
+
+### Bookings
+- **id:** Unique identifier for each booking.
+- **property:** Reference to the property being booked.
+- **user:** Reference to the user making the booking.
+- **check_in:** Start date of the booking.
+- **check_out:** End date of the booking.
+
+### Reviews
+- **id:** Unique identifier for each review.
+- **property:** Reference to the property being reviewed.
+- **user:** Reference to the user who wrote the review.
+- **rating:** Numeric rating given by the user.
+- **comment:** Text feedback from the user.
+
+### Payments
+- **id:** Unique identifier for each payment.
+- **booking:** Reference to the related booking.
+- **user:** Reference to the user making the payment.
+- **amount:** Payment amount.
+- **status:** Payment status (e.g., pending, completed, failed).
+
+#### Entity Relationships
+- A **User** can own multiple **Properties** (as a host).
+- A **Property** can have multiple **Bookings** and **Reviews**.
+- A **Booking** is made by a **User** for a specific **Property**.
+- A **Review** is written by a **User** for a specific **Property**.
+- A **Payment** is linked to a **Booking** and made by a **User**.

@@ -39,3 +39,68 @@ Handles infrastructure automation, deployment, and monitoring. Manages Docker co
 
 ### QA Engineer
 Tests all backend endpoints and features. Writes unit, integration, and end-to-end tests to identify bugs, validate functionality, and enforce performance standards. Also verifies API documentation aligns with implemented behavior.
+
+## Technology Stack
+
+### Django
+Django is a high-level Python web framework used to build robust, scalable web applications quickly. In an Airbnb-like project, Django helps by:
+- **Managing Listings** & Users: Handles property listings, user authentication, and profiles.
+- **Database Integration**: Simplifies storing and retrieving data (like bookings, reviews) using its ORM.
+- **Security**: Provides built-in protections (against SQL injection, CSRF, etc.).
+- **Admin Interface**: Offers a ready-to-use admin panel for managing site content.
+- **URL Routing & Templates**: Organizes site navigation and renders dynamic page
+
+### Django REST Framework
+Django REST Framework (DRF) is a toolkit for building Web APIs in Django. DRF helps by:
+- **Creating APIs**: Easily builds RESTful endpoints for listings, bookings, users, etc.
+- **Serialization**: Converts complex data (like models) to JSON for frontend/mobile apps.
+- **Authentication** & Permissions: Manages user access and security for API endpoints.
+- **Browsable API**: Provides a web interface for testing and exploring APIs.
+- **Validation**: Ensures incoming data is correct and safe.
+
+### PostgreSQL
+PostgreSQL is a powerful open-source relational database system. PostgreSQL helps by:
+- **Data Storage**: Reliably stores structured data such as users, properties, bookings, and reviews.
+- **Relationships**: Manages complex relationships between entities (e.g., users and bookings) using foreign keys.
+- **Performance**: Supports indexing and advanced queries for fast data retrieval.
+- **Data Integrity**: Enforces constraints to keep data accurate and consistent.
+- **Scalability**: Handles large volumes of data as the platform grows.
+
+### GraphQL
+GraphQL is a query language and runtime for APIs. GraphQL helps by:
+- **Flexible Queries**: Allows clients to request only the data they need for listings, bookings, etc.
+- **Efficient Data Fetching**: Reduces over-fetching and under-fetching of data.
+- **Single Endpoint**: Provides all data through one endpoint, simplifying API management.
+- **Strong Typing**: Ensures data consistency with a defined schema.
+- **Real-time Updates**: Supports subscriptions for live data (e.g., booking status changes).
+
+### Celery
+- **Background Processing**: Handles tasks like sending emails or notifications outside the main request cycle.
+- **Scalability**: Processes many tasks concurrently, improving performance.
+- **Scheduling**: Automates periodic jobs (e.g., cleaning up expired bookings).
+- **Reliability**: Retries failed tasks automatically.
+- **Integration**: Works seamlessly with Django and other backend components.
+
+### Redis
+Redis is an in-memory data store and cache. Redis helps by:
+- **Caching**: Stores frequently accessed data (like property details) for faster retrieval.
+- **Session Management**: Manages user sessions efficiently.
+- **Task Queues**: Acts as a broker for Celery to manage background jobs.
+- **Real-time Features**: Supports features like live chat or notifications.
+- **Performance**: Reduces database load and speeds up response times.
+
+### Docker
+Docker is a containerization platform. Docker helps by:
+- **Consistency**: Ensures the app runs the same way in development, testing, and production.
+- **Isolation**: Separates services (database, backend, etc.) into containers.
+- **Portability**: Makes it easy to deploy the app on any infrastructure.
+- **Scalability**: Simplifies scaling services up or down.
+- **Dependency Management**: Packages all dependencies with the application.
+
+### CI/CD Pipelines
+CI/CD Pipelines are automated workflows for software delivery. CI/CD pipelines help by:
+- **Automated Testing**: Runs tests on every code change to catch bugs early.
+- **Continuous Integration**: Merges code changes frequently and safely.
+- **Continuous Deployment**: Automatically deploys updates to staging or production.
+- **Quality Assurance**: Enforces code standards and checks before deployment.
+- **Faster Delivery**: Speeds up the release of new features and fixes.
